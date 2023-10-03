@@ -1,0 +1,99 @@
+
+/* add fonts */
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@700;800&family=Comfortaa:wght@400;700&family=Inria+Sans:wght@300;400;700&family=Kodchasan:wght@400;500&family=Lexend+Zetta:wght@700&family=Roboto:wght@400;700&display=swap');
+
+*{
+   padding: 0; 
+   margin: 0;
+   overflow-x: hidden;
+
+   --uk-regular-font: Comfortaa;
+   --uk-title-font: Advent Pro;
+   --en-regular-font: Kodchasan;
+   --en-title-font: Lexend Zetta;
+}
+
+.nav{
+    position: static;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 40px;
+}
+
+.nav_list{
+    display: flex;
+    z-index: 100;
+}
+
+.nav_link{
+    color: white;
+    text-decoration: none;
+    list-style: none;
+    margin-inline: 2rem;
+    font-size: 1.5rem;
+    font-family: var(--en-regular-font);
+}
+.nav_link:hover{
+    color: yellow;
+    transition: .2s;
+}
+
+.nav_button{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+.uk_button{
+    background-image: url(ukrainian-flag-of-ukraine_469558-1813.avif);
+    background-size: cover;
+    background-position: center;
+}
+
+.en_button{
+    background-image: url(United-States.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.section{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.main-bg{
+    min-height: 100vh;
+    width: 100vw;
+    background-image: url(12187.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+}
+
+.home_section{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.title{
+    position: relative;
+    z-index: 1;
+    text-transform: uppercase;
+    color: white;
+    font-family: var(--en-title-font);
+    font-size: 12rem;
+    letter-spacing: 40px;
+    line-height: 100vh;
+    user-select: none;
+}
+
+.del{
+     display: none;
+}
